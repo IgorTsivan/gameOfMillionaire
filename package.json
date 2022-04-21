@@ -40,13 +40,19 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "pre-commit": "^1.2.2",
+    "pre-push": "^0.1.2",
     "prettier": "^2.6.2"
   },
   "prettier": {
     "singleQuote": true,
     "printWidth": 100
   },
-  "pre-commit": [ "lint" ],
+  "pre-commit": [
+    "lint"
+  ],
+  "pre-push": [
+    "test"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",
