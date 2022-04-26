@@ -47,6 +47,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
+    "husky": "^7.0.4",
     "jest-watch-typeahead": "^0.6.5",
     "pre-commit": "^1.2.2",
     "pre-push": "^0.1.2",
@@ -57,9 +58,12 @@
     "singleQuote": true,
     "printWidth": 100
   },
-  "pre-commit": [
-    "lint"
-  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run test"
+    }
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
