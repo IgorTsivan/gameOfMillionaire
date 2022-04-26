@@ -18,11 +18,28 @@
     z-index: 10;
 
     span {
-      width: 16px;
+      width: 18px;
       display: block;
       height: 2px;
       background: $black;
       margin-bottom: 3px;
+      transition: .3s;
+    }
+
+    &.close {
+      span {
+        &:nth-child(1) {
+          transform: rotate(-45deg) translate(-4px, 3px);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(45deg) translate(-4px, -3px);
+        }
+      }
     }
   }
 
@@ -72,7 +89,7 @@
       padding: 20px;
       width: 100%;
 
-      &.hide{
+      &.hide {
         display: none;
       }
 

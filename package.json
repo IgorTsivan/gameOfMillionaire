@@ -25,6 +25,8 @@
     "@types/react": "^18.0.5",
     "@types/react-dom": "^18.0.1",
     "gh-pages": "^3.2.3",
+    "pre-commit": "^1.2.2",
+    "pre-push": "^0.1.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-redux": "^8.0.1",
@@ -47,10 +49,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
-    "husky": "^7.0.4",
     "jest-watch-typeahead": "^0.6.5",
-    "pre-commit": "^1.2.2",
-    "pre-push": "^0.1.2",
     "prettier": "^2.6.2",
     "sass": "^1.50.1"
   },
@@ -58,12 +57,12 @@
     "singleQuote": true,
     "printWidth": 100
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm test",
-      "pre-push": "npm run test && npm test"
-    }
-  },
+  "pre-commit": [
+    "lint"
+  ],
+  "pre-push": [
+    "test"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",
