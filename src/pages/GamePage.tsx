@@ -21,6 +21,7 @@ export const GamePage: FC = () => {
   const data: QuestionInterface[] = useSelector((state: AppState) => state.game.data);
   const dispatch: Dispatch<any> = useDispatch();
   useEffect(() => {
+    dispatch(getData(GameDataMock));
     return () => dispatch(getData(GameDataMock));
   }, [dispatch]);
   const checkAnswer = (isRightAnswer: boolean): void => {
