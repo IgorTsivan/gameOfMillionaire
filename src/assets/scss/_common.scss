@@ -1,0 +1,30 @@
+@import "./variable";
+
+.btn {
+  background: $primary;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 24px;
+  color: $white;
+  width: 296px;
+  display: inline-block;
+  text-align: center;
+  transition: .2s;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background: $primary-light;
+    transition: .2s;
+  }
+
+  &:active {
+    background: $primary-dark;
+  }
+}
+
+p {
+  color: $black;
+}

@@ -11,7 +11,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
-    "lint": "eslint src --ext .ts --ext .tsx . --fix"
+    "lint": "eslint src --ext .ts --ext .tsx . --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -21,9 +23,14 @@
     "@types/node": "^16.11.27",
     "@types/react": "^18.0.5",
     "@types/react-dom": "^18.0.1",
+    "gh-pages": "^3.2.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
     "typescript": "^4.6.3",
     "web-vitals": "^2.1.4"
   },
@@ -42,7 +49,8 @@
     "jest-watch-typeahead": "^0.6.5",
     "pre-commit": "^1.2.2",
     "pre-push": "^0.1.2",
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "sass": "^1.50.1"
   },
   "prettier": {
     "singleQuote": true,

@@ -29,6 +29,18 @@
   ],
   "rules": {
     "import/no-unresolved": "error",
+    "import/prefer-default-export": "off",
+    "react/button-has-type": "off",
+    "no-unused-vars": "off",
+    "prefer-spread": "off",
+    "default-param-last": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
     "react/jsx-filename-extension": [
       1,
       {
