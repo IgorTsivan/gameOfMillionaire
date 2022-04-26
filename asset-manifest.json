@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/gameOfMillionaire/static/css/main.9b667d44.css",
-    "main.js": "/gameOfMillionaire/static/js/main.ccd9362f.js",
+    "main.js": "/gameOfMillionaire/static/js/main.80446afc.js",
     "static/js/787.0e3789cb.chunk.js": "/gameOfMillionaire/static/js/787.0e3789cb.chunk.js",
     "static/media/five.png": "/gameOfMillionaire/static/media/five.ce309bcbf638fc25bb80.png",
     "index.html": "/gameOfMillionaire/index.html",
     "main.9b667d44.css.map": "/gameOfMillionaire/static/css/main.9b667d44.css.map",
-    "main.ccd9362f.js.map": "/gameOfMillionaire/static/js/main.ccd9362f.js.map",
+    "main.80446afc.js.map": "/gameOfMillionaire/static/js/main.80446afc.js.map",
     "787.0e3789cb.chunk.js.map": "/gameOfMillionaire/static/js/787.0e3789cb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9b667d44.css",
-    "static/js/main.ccd9362f.js"
+    "static/js/main.80446afc.js"
   ]
 }
