@@ -4,6 +4,7 @@
   "author": "",
   "license": "ISC",
   "description": "Game of millionaire",
+  "homepage": "https://igortsivan.github.io/gameOfMillionaire/",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -58,9 +59,6 @@
   },
   "pre-commit": [
     "lint"
-  ],
-  "pre-push": [
-    "test"
   ],
   "eslintConfig": {
     "extends": [
